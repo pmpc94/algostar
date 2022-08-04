@@ -11,6 +11,23 @@ module.exports = {
   ],
   plugins: [],
   rules: {
-    // 'space-before-function-paren': 'error'
+    // 'space-before-function-paren': 'error',
+    'no-await-in-loop': 'error',
+    'no-class-assign': 'error',
+    'no-compare-neg-zero': 'error',
+    'no-const-assign': 'error',
+    'no-constant-condition': 'error',
+    'no-constructor-return': 'error',
+    'no-dupe-args': 'error',
+    'no-dupe-class-members': 'error',
+    'no-dupe-else-if': 'error',
+    'no-dupe-keys': 'error',
+    'no-duplicate-case': 'error',
+    'no-duplicate-imports': 'error',
+    'no-ex-assign': 'error',
+    'no-fallthrough': 'error',
+    'no-func-assign': 'error',
+    'no-inner-declarations': 'error',
+    'no-irregular-whitespace': 'error'
   }
 }
