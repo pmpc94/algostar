@@ -28,6 +28,14 @@ module.exports = {
     'no-fallthrough': 'error',
     'no-func-assign': 'error',
     'no-inner-declarations': 'error',
-    'no-irregular-whitespace': 'error'
+    'no-irregular-whitespace': 'error',
+    'no-obj-calls': 'error',
+    'no-prototype-builtins': 'error',
+    'no-self-assign': 'error',
+    'no-self-compare': 'error',
+    'no-sparse-arrays': 'error',
+    'no-template-curly-in-string': 'error',
+    'no-this-before-super': 'error',
+    'no-undef': 'error'
   }
 }
