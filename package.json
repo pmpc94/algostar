@@ -13,7 +13,8 @@
     "lint": "npm run lint:js && npm run lint:style && npm run lint:prettier",
     "lintfix": "prettier --write --list-different . && npm run lint:js -- --fix && npm run lint:style -- --fix",
     "prepare": "husky install",
-    "test": "jest"
+    "test": "jest",
+    "get-schema": "graphql get-schema -p prisma"
   },
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --cache",
@@ -24,6 +25,7 @@
     "@nuxtjs/axios": "^5.13.6",
     "core-js": "^3.19.3",
     "express": "^4.18.1",
+    "graphql-yoga": "^2.13.6",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
@@ -46,17 +48,20 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-nuxt": "^3.1.0",
     "eslint-plugin-vue": "^8.2.0",
+    "graphql-cli": "^4.1.0",
     "husky": "^7.0.4",
     "jest": "^27.4.4",
     "lint-staged": "^12.1.2",
     "postcss-html": "^1.3.0",
     "prettier": "^2.5.1",
+    "prisma": "^4.2.0",
+    "prisma-binding": "^2.3.16",
     "stylelint": "^14.1.0",
     "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-recommended-vue": "^1.1.0",
     "stylelint-config-standard": "^24.0.0",
     "ts-jest": "^27.1.1",
-    "vue-jest": "^3.0.4",
-    "typescript": "^4.7.4"
+    "typescript": "^4.7.4",
+    "vue-jest": "^3.0.4"
   }
 }

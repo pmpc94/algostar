@@ -70,7 +70,7 @@ export default {
     }
   },
 
-  serverMiddleware: [{ path: '/api', handler: '~/server/api/raffle.js' }],
+  serverMiddleware: ['~/server/index.ts'],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {}

@@ -1,0 +1,4 @@
+type Todo {
+  item: String!
+  id: String
+}
