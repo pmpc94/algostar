@@ -5,7 +5,7 @@ import prisma from './prisma'
 
 const app = express()
 
-const graphQLServer = createServer({
+const server = createServer({
   schema: {
     typeDefs: './models/schema.graphql',
     resolvers
@@ -18,7 +18,7 @@ const graphQLServer = createServer({
   }
 })
 
-app.use('/graphql', graphQLServer)
+app.use('/graphql', server)
 
 app.listen(3000, () => {
   console.log('GraphQL API located at http://localhost:4000/graphql')

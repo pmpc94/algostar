@@ -88,3 +88,16 @@ sw.*
 
 # Vim swap files
 *.swp
+
+#eslint
+.eslintrc.js
+
+# prettier
+.prettierignore
+.prettierrc
+
+#graphql
+.graphlconfig.js
+
+#editor
+.editorconfig
