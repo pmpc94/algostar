@@ -1,11 +1,12 @@
-import express from 'express'
 import { resolvers } from './resolvers/index'
-import prisma from './prisma'
-
+import typeDefs from './models/schema'
+const express = require('express')
 const { ApolloServer } = require('apollo-server-express')
+const { PrismaClient } = require('@prisma/client')
+const prisma = new PrismaClient()
 
-const server = ApolloServer({
-  typeDefs: './models/schema.graphql',
+const server = new ApolloServer({
+  typeDefs,
   resolvers,
   context(request: object) {
     return {
@@ -16,12 +17,12 @@ const server = ApolloServer({
 })
 
 const app = express()
-
 server.start().then(() => {
+  console.log('server started: ', server)
   server.applyMiddleware({ app })
 })
 
 export default {
   path: '/api',
-  handler: app
+  handler: server
 }
